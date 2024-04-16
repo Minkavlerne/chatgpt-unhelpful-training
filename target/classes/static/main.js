@@ -11,7 +11,7 @@ async function getTraining(e) {
     try {
         spinner.style.display = "block";
         const res = await fetch(URL).then(handleHttpErrors);
-        document.getElementById("result").innerText = res.answer;
+        document.getElementById("result").innerText = res;
     } catch (error) {
         result.style.color = "red";
         result.innerText = error.message;
